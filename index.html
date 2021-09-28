@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>TranNamTrung</title>
+  </head>
+  <body>
+    <div class="title"><strong>🌼Trần Nam Trung🍉</strong></div>
+    <div class="music-container" id="music-container">
+      <div class="music-info">
+        <h4 id="title"></h4>
+        <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+        </div>
+      </div>
+      <audio src="music/ukulele.mp3" id="audio"></audio>
+      <div class="img-container">
+
+        <img src="images/ukulele.jpg" alt="music-cover" id="cover" />
+      </div>
+      <div class="navigation">
+        <button id="prev" class="action-btn">
+          <i class="fas fa-backward"></i>
+        </button>
+        <button id="play" class="action-btn action-btn-big">
+          <i class="fas fa-play"></i>
+        </button>
+        <button id="next" class="action-btn">
+          <i class="fas fa-forward"></i>
+        </button>
+       
+      </div>
+    </div>   
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_aMwMlF.json"  background="transparent"  speed="1"  style="width: 500px; height: 450px; top: 200px; position: absolute; z-index: 1;"  loop  autoplay></lottie-player>
+ 
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_v3P2TW.json"  background="transparent"  speed="0.5"  style="width: 200px; height: 200px; top: -20px; position: relative;"  loop  autoplay></lottie-player>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_v2caoasp.json"  background="transparent"  speed="1"  style="width: 200px; height: 140px; top: -20px; left: 41.3%; position: absolute;"  loop  autoplay></lottie-player>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_wu3Nnr.json"  background="transparent"  speed="1"  style="width: 500px; height: 100px; position: absolute;"  loop  autoplay></lottie-player>
+    
+    <script src="script.js"></script>
+    <script src="confetti.js"></script>
+    <!-- Confetti  JS-->
+    <script>
+
+        // start
+
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  Stop
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000000000000000000000000000000000000000000000000000000000000000000000000000000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+        start();
+        stop();
+    </script>
+  </body>
+</html>
+ 
